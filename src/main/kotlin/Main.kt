@@ -1,15 +1,11 @@
 fun main(args: Array<String>) {
-    println("How old are you: ")
-    val age= readLine()!!.toInt()
-    println("age is $age")
+    val tim=Player("Tim")
+    tim.show()
+    val louise=Player("Louise",12)
+    louise.level=10
+    louise.show()
 
-    val message:String=
-    when{
-        age<18->"You're too young to vote"
-        age==100->"Contralations"
-        else->"You can vote"
-    }
-    println(message)
+
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
